@@ -19,9 +19,7 @@ class Complex {
     {
         real = imaginary = 0;
     }
-    Complex(
-        int r,
-        int i)  // Parametrized constructor to initialize the member variables
+    Complex(int r,int i)  // Parametrized constructor to initialize the member variables
     {
         real = r;
         imaginary = i;
@@ -31,8 +29,7 @@ class Complex {
     {
         return Complex(c->real + this->real, c->imaginary + this->imaginary);
     }
-    Complex subtract(
-        Complex* c)  // Method to subtract the complex numbers and return an
+    Complex subtract(Complex* c)  // Method to subtract the complex numbers and return an
                      // object of class Complex which contains the difference
     {
         return Complex(c->real - this->real, c->imaginary - this->imaginary);
